@@ -10,13 +10,18 @@ h1 {
 	padding-top: 0;
 	padding-bottom: 0; /* .3rem solid #70666c;   ---use this if you want line before & after h1 */
 	text-align:center;
-	font-size: 2.5em;
 	display: flex;
 	align-items: center;
+	/*font-family: "Corben" !important;*/
+	font-weight: 600;
+	font-size: 2em;
+	margin-top: -1em !important;
+	margin-bottom: -.3em !important;
 }
 
 h1 a {
 	padding: 0 .5em 0 0.5em;
+	font-size: 2em;
 }
 
 
@@ -42,14 +47,7 @@ h1:after {
 	display: block;
 }	
 
-/**-- markdown attributes plugin --**/
-.header-title {
-    /*font-family: "Corben" !important;*/
-	font-size: 2em;
-    font-weight: 600;
-    margin-top: -1.5em !important;
-    margin-bottom: -.8em !important;
-}
+
 
 /** banner icon as date - from Rainbell**/
 .obsidian-banner-icon .icon-box
