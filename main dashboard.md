@@ -5,7 +5,7 @@ banner: "![[0eb02b4ebdbba260b61205e8aa876455.gif]]"
 banner_y: 0.611
 banner_icon: 📆
 ---
-# [[Dashboard - MAIN|Dashboard]]  { .header-title }
+# [[Dashboard - MAIN|Dashboard]]
 
 <p align= "center"> Time is infinite, but my time is not. So use it wisely. </p>
 
