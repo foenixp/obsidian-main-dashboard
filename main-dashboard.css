@@ -1,0 +1,142 @@
+/*-------------- main-dashboard css --------------------------------- */
+/** yaml - hide front matter **/
+.markdown-preview-view .frontmatter-container {
+    display: none;
+}
+
+
+/** styling h1 **/
+h1 {
+	padding-top: 0;
+	padding-bottom: 0; /* .3rem solid #70666c;   ---use this if you want line before & after h1 */
+	text-align:center;
+	font-size: 2.5em;
+	display: flex;
+	align-items: center;
+}
+
+h1 a {
+	padding: 0 .5em 0 0.5em;
+}
+
+
+h1:before,
+h1:after {
+    content: "";
+    border-top: none;  
+	border-radius: .2em;
+	margin: 0 1rem;
+    transform: translateY(-0.1rem);
+	height: 0;
+}
+
+h1:before {
+	margin-right: 0.3em;
+	flex: 1;
+}
+
+h1:after {
+	margin-left: 0.3em;	
+	flex: 1;
+	width: 100%;
+	display: block;
+}	
+
+/**-- markdown attributes plugin --**/
+.header-title {
+    /*font-family: "Corben" !important;*/
+	font-size: 2em;
+    font-weight: 600;
+    margin-top: -1.5em !important;
+    margin-bottom: -.8em !important;
+}
+
+/** banner icon as date - from Rainbell**/
+.obsidian-banner-icon .icon-box
+{
+content: url("https://api.wolai.com/v1/icon?type=1&locale=en_ga&pro=0&color=pink");
+}
+
+
+/**callout 5 columns **/
+.callout[data-callout="col5"] {
+    border-left: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+.callout[data-callout="col5"] .callout-title {
+    display: none; 
+}
+.callout[data-callout="col5"] .callout {
+    overflow: visible;
+    margin: 0;
+}
+
+.callout[data-callout="col5"] > .callout-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+
+
+/** ------- nested callout note for culumns ----- **/
+.callout[data-callout="notecol"] {
+    --callout-color: 255, 214, 226;
+	border-left: 0;
+}
+
+.callout[data-callout="notecol"] .callout-content {
+    border: none;
+	padding: none;
+}
+
+
+.callout[data-callout="notecol"] .callout-title {
+	background-color: rgba(var(--callout-color), 0) !important;
+	display: inline !important;
+	
+}
+
+/*** nested callout note for culumns | image used as tittle + centered ***/
+.callout[data-callout="notecol"] .callout-title img {
+    border-radius: 1em !important;
+	margin: auto;
+	display: block;
+}
+
+
+/*** nested callout note for culumns | icon NOT displayed ***/
+.callout[data-callout="notecol"] .callout-icon {
+   display: none !important;
+}
+
+
+/*** nested callout note for culumns | h3 header always in the center ***/
+.callout[data-callout="notecol"] {
+	background-color: transparent; 
+}
+
+.callout[data-callout="notecol"] .callout-content {
+    margin: 0;
+    overflow: visible;
+    padding: 0 0.3em 0 0.3em;
+    border: none;
+    border-radius: 13px;
+}
+
+.callout[data-callout="notecol"] .callout-content h3 {
+text-align: center;	
+padding-top: 0.2em;
+padding-top: 0;
+    margin-top: 0;
+}
+
+.callout[data-callout="notecol"] .callout-content a {
+    color: #f5e1e1;
+}
+
+/*** nested callout note for culumns | divider "---" has no margin ***/
+.callout[data-callout="notecol"] .callout-content hr {
+	margin: 0;
+}
+/** ------- callout note for culumns - end ----------------- **/
